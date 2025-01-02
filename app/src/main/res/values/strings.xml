@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Appraisal360</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login">Login</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="add_manager">Add Manager</string>
+    <string name="add_staff">Add Staff</string>
+    <string name="gender">Gender</string>
+    <string name="department">Department</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="mobile">Mobile No</string>
+    <string name="add">Add</string>
+</resources>

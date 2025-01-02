@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".loginactivity.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/login_shape_bk">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_login_bk"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/adlam_display"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                        android:hint="@string/enter_email">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mEdtUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:drawableEnd="@drawable/baseline_person_24"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/mTxtUserNameError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:text="@string/invalid_email"
+                        android:padding="5dp"/>
+                </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                       android:hint="@string/enter_password"
+                       android:layout_marginTop="20dp"
+                       app:passwordToggleEnabled="true"
+                       app:passwordToggleTint="@color/black"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:id="@+id/mEdtPassword"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:singleLine="true"
+                           android:maxLines="1"
+                           android:inputType="textPassword"/>
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <TextView
+                       android:id="@+id/mTxtPaswordError"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/holo_red_dark"
+                       android:textAlignment="textEnd"
+                       android:textSize="14sp"
+                       android:text="@string/invalid_password"
+                       android:visibility="gone"
+                       android:padding="5dp"/>
+               </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mBtnLogin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textSize="16sp"
+                    app:backgroundTint="@null"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_button_bk"
+                    app:cornerRadius="16dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</layout>
